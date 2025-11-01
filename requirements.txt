@@ -1,0 +1,30 @@
+Workout Management
+Users will be able to create their workout plans. Workout plans should consist of multiple exercises, each with a set number of repetitions, sets, and weights. Users should be able to update and delete their workout plans. Additionally, users should be able to schedule workouts for specific dates and times.
+
+Create Workout: Allow users to create workouts composed of multiple exercises.
+Update Workout: Allow users to update workouts and add comments.
+Delete Workout: Allow users to delete workouts.
+Schedule Workouts: Allow users to schedule workouts for specific dates and times.
+List Workouts: List active or pending workouts sorted by date and time.
+Generate Reports: Generate reports on past workouts and progress.
+
+
+Workout
+- User
+- Start timestamp
+- End timestamp
+- List[Exercise]
+
+Exercise 
+-  Name
+- Description
+- Tags (Muscle Group)
+- List[ExerciseSet]
+
+ExerciseSet
+- Set number
+- Set type (warmup, working set, superset)
+- repetitions
+- weight (lbs, kilos)
+
+
